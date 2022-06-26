@@ -321,7 +321,7 @@ function average_stu(dil) {
         for (var avee = 1; avee < Number(tab_wi); avee++) {
             average_stu = average_stu + Number(document.getElementById("h" + ave + "w" + avee).innerHTML);
         }
-        average_stu = average_stu / Number(tab_wi);
+        average_stu = average_stu / Number(tab_wi - 1);
         average_stu = Number(average_stu).toFixed(2);
         new_td.style.backgroundColor = "#fffce3";
         new_td.innerHTML = average_stu;
