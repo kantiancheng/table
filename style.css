@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    background-color: #faebd7;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh);
+}
+
+.title_div {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.table-scroll {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.table-scroll table {
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-scroll th,
+.table-scroll td {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background: #fff;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.table-scroll thead,
+.table-scroll tfoot {
+    background: #f9f9f9;
+}
+
+.clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.clone th,
+.clone td {
+    visibility: hidden
+}
+
+.clone td,
+.clone th {
+    border-color: transparent
+}
+
+.clone tbody th {
+    visibility: visible;
+    color: red;
+}
+
+.clone .fixed-side {
+    border: 1px solid #000;
+    background: #eee;
+    visibility: visible;
+}
+
+.clone thead,
+.clone tfoot {
+    background: transparent;
+}
+
+button {
+    height: 5%;
+    width: 15%;
+    font-size: large;
+}
+
+
+/*更换颜色*/
+
+.coler {
+    text-align: center;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    height: 60px;
+    width: 130px;
+    background-color: rgb(99, 99, 99);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: larger;
+    z-index: 10;
+    font-weight: 900;
+}

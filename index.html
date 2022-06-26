@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表格存储</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body class="back" id="back" onload="initialize();">
+    <!--初始化表格-->
+    <div onclick="back_coler();" class="coler">
+        更换背景颜色
+    </div>
+    <div class="main">
+        <br />
+        <br />
+        <div class="title_div">
+            <a contentEditable="true" id="tiname" oninput="tchenge();">表格</a>
+            <!--题目更改保存-->
+            <br />
+            <br />
+            <div class="table_div">
+                <div id="table-scroll" class="table-scroll">
+                    <div class="table-wrap">
+                        <table class="main-table" id="table" oninput="chenge();">
+                            <thead>
+                                <tr id="top_bar">
+                                    <th id="h" class="fixed-side" scope="col" style="background-color: rgb(133, 133, 133);">学生/科目(分数)</th>
+                                    <!--<th id="h0w1" contenteditable="true" scope="col">语文</th>
+                                    <th id="h0w2" contenteditable="true" scope="col">英语</th>
+                                    <th id="h0w3" contenteditable="true" scope="col">数学</th>-->
+                                </tr>
+                            </thead>
+                            <!--生成区域-->
+                        </table>
+                    </div>
+                </div>
+                <button id="new_stu" href="#new_stu" onclick="new_student();">新建学生</button>
+                <button id="new_sub" href="#new_sub" onclick="new_sub();">新建科目</button><br>
+                <button style="background-color: red; color: #eee;" onclick="clearer();">清除数据</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
