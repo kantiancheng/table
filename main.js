@@ -280,7 +280,7 @@ function average() {
             for (var avee = 0; avee < Number(tab_hi); avee++) {
                 averagee = averagee + Number(document.getElementById("h" + avee + "w" + ave).innerHTML);
             }
-            averagee = averagee / Number(tab_hi) - 1;
+            averagee = averagee / Number(tab_hi);
             averagee = Number(averagee).toFixed(2);
             var new_cells = document.createElement("td");
             new_cells.style.backgroundColor = "#fffce3";
